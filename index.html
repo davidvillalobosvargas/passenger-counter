@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="w-full h-screen bg-no-repeat bg-cover" 
+  style="background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('images/935850.jpg');">
+  <div class="flex flex-col items-center">
+    <div class="max-w-4xl w-full flex flex-col items-center pt-10">
+      <div class="bg-white flex flex-col items-center p-7 rounded-lg border border-black">
+        <h1 class="text-black font-serif text-5xl">People entered:</h1>
+        <p id="el-count" class="text-6xl font-bold">0</p>
+        <div class="flex flex-col sm:flex-row">
+          <button onclick="increment()" class="bg-green-500 hover:bg-green-600 py-2 px-4 rounded-lg m-1 text-white uppercase font-semibold">increment</button>
+          <button onclick="save()" class="bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-lg m-1 text-white uppercase font-semibold">save</button>
+          <button onclick="limpiar()" class="bg-indigo-500 hover:bg-indigo-600 py-2 px-4 rounded-lg m-1 text-white uppercase font-semibold">clear</button>
+        </div>
+        <p id="el-entries" class="text-xl">Previous entries: </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
